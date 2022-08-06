@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Deeuphemizer",
+  "version": "1.0",
+  "description": "Deeuphemize the nytimes by replacing \"falsehood\" with \"lie\"",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+
+  "content_scripts": [{
+    "matches": [
+      "*://nytimes.com/*",
+      "*://www.nytimes.com/*"
+    ],
+    "js": ["main.js"],
+    "run_at": "document_end",
+    "all_frames": true
+  }]
+}
