@@ -7,9 +7,9 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "*://nytimes.com/*",
+    "*://www.nytimes.com/*"
   ],
-
   "content_scripts": [{
     "matches": [
       "*://nytimes.com/*",
