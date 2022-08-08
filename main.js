@@ -12,6 +12,7 @@ function makeBanner(count){
 '      position: fixed;' +
 '      top: 0px;' +
 '      background-color: #5cb85c;' +
+'      z-index: 9999999999999' +
 '  }' +
 '</style>'
 
@@ -51,7 +52,7 @@ function deeuphemize(){
     document.body.innerHTML = html;
     setTimeout(function(){
       document.getElementById('deeuphemizer-banner').style.display = "none";
-    }, 5000);
+    }, 6000);
   }
 }
 
